@@ -1,0 +1,20 @@
+django
+
+django-allauth == 0.55.0
+python-dateutil
+stripe
+
+markdown
+django-filter
+django-resized
+python-decouple
+django-ckeditor
+django-crispy-forms
+Pillow
+six
+django-environ
+mysqlclient
+PyJWT
+cryptography
+crispy-bootstrap5
+django-crispy-forms

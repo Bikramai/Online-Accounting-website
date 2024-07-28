@@ -1,0 +1,21 @@
+<svg width="200" height="152" viewBox="0 0 200 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="105" y="78" width="66" height="41" rx="7" fill="url(#paint0_linear_502_272)"/>
+<path d="M161.667 99L140.333 99M161.667 99L153.667 90.5M161.667 99L153.667 107.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M175.067 148.406C184.148 134.382 189.421 117.662 189.421 99.7106C189.421 50.1648 149.256 10 99.7106 10C50.1648 10 10 50.1648 10 99.7106C10 117.662 15.2727 134.382 24.3539 148.406H12.6791C4.60412 134.005 0 117.396 0 99.7106C0 44.642 44.642 0 99.7106 0C154.779 0 199.421 44.642 199.421 99.7106C199.421 117.396 194.817 134.005 186.742 148.406H175.067Z" fill="url(#paint1_linear_502_272)"/>
+<rect x="46" y="42" width="87" height="110" rx="13" fill="#2781FF"/>
+<rect width="54" height="3" rx="1.5" transform="matrix(1 0 0 -1 63 98)" fill="white"/>
+<rect width="54" height="3" rx="1.5" transform="matrix(1 0 0 -1 63 80)" fill="white"/>
+<rect width="54" height="3" rx="1.5" transform="matrix(1 0 0 -1 63 62)" fill="white"/>
+<rect width="54" height="3" rx="1.5" transform="matrix(1 0 0 -1 63 116)" fill="white"/>
+<rect width="54" height="3" rx="1.5" transform="matrix(1 0 0 -1 63 134)" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear_502_272" x1="172.32" y1="85.7759" x2="119.51" y2="79.8382" gradientUnits="userSpaceOnUse">
+<stop offset="0.586594" stop-color="#E4CAFF" stop-opacity="0.7"/>
+<stop offset="1" stop-color="white" stop-opacity="0.8"/>
+</linearGradient>
+<linearGradient id="paint1_linear_502_272" x1="50.4251" y1="-2.01482e-06" x2="111.315" y2="151.381" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F8CAFF" stop-opacity="0.4"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

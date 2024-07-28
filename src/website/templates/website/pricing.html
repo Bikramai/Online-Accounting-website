@@ -1,0 +1,220 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block sub_title %}
+    Pricing
+{% endblock %}
+
+{% block content %}
+
+    <section id="saasio-breadcurmb" class="saasio-breadcurmb-section">
+        <div class="container">
+            <div class="breadcurmb-title text-center">
+                <h2>Pricing</h2>
+            </div>
+            <div class="breadcurmb-item-list text-center ul-li">
+                <ul class="saasio-page-breadcurmb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="em-pricing" class="em-pricing-section">
+        <div class="container">
+            <div class="em-section-title text-center em-headline pera-content">
+                <h2>Tailored pricing for your specific needs</h2>
+                <h5>We like to keep it very simple and charge for only what you actually
+                    need for your business.</h5>
+            </div>
+            <div class="em-pricing-content">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 em-no-padding">
+                        <div class="em-pricing-plan-item text-center em-headline ul-li-block">
+                            <div class="em-pricing-icon">
+                                <img style="width: 100px;height: 100px;"
+                                     src="{% static 'website/img/email-market/pi1.png' %}" alt="">
+                            </div>
+                            <div class="em-pricing-plan-name text-uppercase">
+                                <h4>Sole Traders</h4>
+                            </div>
+                            <div class="em-pricing-price">
+                                <h3>&pound; 90/<small>Year</small></h3>
+                            </div>
+                            <div class="em-pricing-plan-list">
+                                <p class="mb-4">
+                                    Simplicity and Complete Accounting support for and unbeatable price
+                                </p>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#" data-toggle="modal" data-target="#modal-manage-filing"
+                                   class="apldg-primary-btn text-white">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 em-no-padding">
+                        <div class="em-pricing-plan-item  em-popular-price text-center em-headline ul-li-block">
+                            <span class="em-popular-badge position-absolute"><img
+                                    src="{% static 'website/img/email-market/em-p-badge.png' %}" alt=""></span>
+                            <div class="em-pricing-icon">
+                                <img style="width: 100px;height: 100px;"
+                                     src="{% static 'website/img/email-market/pi1.png' %}" alt="">
+                            </div>
+                            <div class="em-pricing-plan-name text-uppercase">
+                                <h4>Limited Companies</h4>
+                            </div>
+                            <div class="em-pricing-price">
+                                <h3>&pound; 280/<small>Year</small></h3>
+                            </div>
+                            <div class="em-pricing-plan-list">
+                                <p>
+                                    Expert Accountancy Assistance for your growing business enterprise
+                                </p>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#" data-toggle="modal" data-target="#modal-manage-filing-280"
+                                   class="apldg-primary-btn text-white">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 em-no-padding">
+                        <div class="em-pricing-plan-item text-center em-headline ul-li-block">
+                            <div class="em-pricing-icon">
+                                <img style="width: 100px;height: 100px;"
+                                     src="{% static 'website/img/email-market/pi1.png' %}" alt="">
+                            </div>
+                            <div class="em-pricing-plan-name text-uppercase">
+                                <h4>Dormant Accounts</h4>
+                            </div>
+                            <div class="em-pricing-price">
+                                <h3>&pound; 35/<small>Year</small></h3>
+                            </div>
+                            <div class="em-pricing-plan-list">
+                                <p class="mb-4">
+                                    Submit your dormant accounts with one of our experts, stress free
+                                </p>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#" data-toggle="modal" data-target="#modal-manage-filing-40" class="apldg-primary-btn text-white">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 em-no-padding">
+                        <div class="em-pricing-plan-item text-center em-headline ul-li-block">
+                            <div class="em-pricing-icon">
+                                <img style="width: 100px;height: 100px;"
+                                     src="{% static 'website/img/email-market/pi1.png' %}" alt="">
+                            </div>
+                            <div class="em-pricing-plan-name text-uppercase">
+                                <h4>Tailored Quote</h4>
+                            </div>
+                            <div class="em-pricing-price">
+                                <h3></h3>
+                            </div>
+                            <div class="em-pricing-plan-list">
+                                <p class="mb-4">
+                                    Get a 15 minutes callback
+                                </p>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#" data-toggle="modal" data-target="#modal-manage-filing-40" class="apldg-primary-btn text-white">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-manage-filing" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form method="post" action="{% url 'website:filing-add' %}">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Manage Filing</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        {% csrf_token %}
+                        {{ filing_form|crispy }}
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fa fa-check-circle"></i> Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-manage-filing-40" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form method="post" action="{% url 'website:filing-add-40' %}">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Manage Filing</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        {% csrf_token %}
+                        {{ filing_form }}
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fa fa-check-circle"></i> Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-manage-filing-280" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form method="post" action="{% url 'website:filing-add-280' %}">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Manage Filing</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        {% csrf_token %}
+                        {{ filing_form }}
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fa fa-check-circle"></i> Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+
+

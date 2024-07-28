@@ -1,0 +1,83 @@
+{% load static %}
+
+<footer id="saas_two_footer" class="saas_two_footer_section relative-position">
+    <div class="s2-newslatter_section relative-position">
+        <div class="container">
+            <div class="s2-newslatter_content relative-position">
+                <div class="s2-newslatter_title  text-center saas2-headline pera-content">
+                    <h2>Request a Call Back</h2>
+                    <p>15 minutes call back</p>
+                </div>
+                <div class="row justify-content-center my-4">
+{#                        <input name="subscriber-email" id="subscriber-email" type="email"#}
+{#                               placeholder="Enter your email address">#}
+                        <div class="col-12 text-center">
+                            <div class="apldg-git-btn">
+                            <a href="{% url 'website:home' %}#hero-btn" class="apldg-primary-btn text-white">Book Now</a>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <div class="newsletter_pattern_1"><img src="{% static 'website/img/saas-c/banner/nb.png' %}" alt=""></div>
+                                <div class="newsletter_pattern_4 " style="background-image: url({% static 'website/img/saas-c/banner/ns.png' %});"></div>
+                                <div class="newsletter_pattern_5 " style="background-image: url({% static 'website/img/saas-c/banner/ns2.png' %});"></div>
+        </div>
+    </div>
+    <div class="footer_content pera-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="s2_footer_widget clearfix ul-li-block  saas2-headline">
+                        <div class="s2_footer_about">
+                            <div class="s2-footer_logo">
+                            </div>
+                            <div class="footer_about">
+                                We provide online accountancy services throughout the <span>UK</span>
+                                        tax returns one off charge from just <span>&pound;90</span> and company accounting starting from <span>&pound;280</span>
+                            </div>
+                            <span>Open Hours: </span>
+                            <p>24/7</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="s2_footer_widget clearfix ul-li-block saas2-headline">
+                        <div class="s2_footer_menu">
+                            <h3 class="s2_widget_title">
+                                <span>Services</span>
+                                <i></i>
+                            </h3>
+                            <ul>
+                                <li><a href="#"> Accounts</a></li>
+                                <li><a href="#"> Payroll</a></li>
+                                <li><a href="#"> Tax Returns</a></li>
+                                <li><a href="#"> Book Keeping</a></li>
+                                <li><a href="#"> Vat Returns</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="s2_footer_widget clearfix ul-li-block saas2-headline">
+                        <div class="s2_footer_social">
+                            <h3 class="s2_widget_title">
+                                <span>About</span>
+                                <i></i>
+                            </h3>
+                            <p>Send us a newsletter to get update</p>
+                            <form method="post" action="{% url 'website:subscriber-add' %}">
+                                {% csrf_token %}
+                                <input required id="email" name="email" type="email" placeholder="Enter your email address">
+                                <button type="submit" value="Submit"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                        <a class="text-white" href="{% url 'website:privacy' %}"> Privacy Policy</a> |
+                        <a class="text-white" href="{% url 'website:terms' %}"> Terms and Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+

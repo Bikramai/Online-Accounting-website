@@ -1,0 +1,745 @@
+{% extends "website/base.html" %}
+{% load static %}
+
+
+{% block sub_title %}
+    Home
+{% endblock %}
+
+{% block content %}
+
+    {# HERO DIV #}
+    <section class="apldg-hero-slider-area" id="apldg_banner">
+    <span class="apldg-hero-vector-1"><img src="{% static 'website/img/d-agency2/slider/object-01.png' %}"
+                                           alt=""></span>
+        <span class="apldg-hero-vector-2"><img src="{% static 'website/img/d-agency2/slider/object-02.png' %}"
+                                               alt=""></span>
+        <span class="apldg-hero-vector-3"><img src="{% static 'website/img/d-agency2/slider/object-03.png' %}"
+                                               alt=""></span>
+        <span class="apldg-hero-vector-4"><img src="{% static 'website/img/d-agency2/slider/object-04.png' %}"
+                                               alt=""></span>
+        <div class="apldg-hero-slider">
+            <div class="apldg-hero-single-item">
+            <span class="apldg-hero-right-img apldg-responsive-vector-img"><img
+                    src="{% static 'website/img/d-agency2/slider/01.png' %}"
+                    alt=""></span>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-6 col-sm-8 offset-sm-2 offset-md-0">
+                            <div class="apldg-hero-left">
+                                <div class="apldg-headline">
+                                    <h1>We provide online accountancy services throughout the <span>UK</span>
+                                        tax returns one off charge from just <span>&pound;90</span> </h1>
+                                </div>
+                                <div class="apldg-pera-txt">
+                                    <p>
+{#                                    <form action="/create-checkout-session/" method="POST">#}
+                                        <button  class="btn btn-box btn-success" data-toggle="modal" data-target="#modal-manage-filing-280">
+                                            Buy Now
+                                        </button>
+{#                                    </form>#}
+                                    &nbsp;&nbsp;&nbsp;Excellent 4.9 out of 5 <b class="text-success"><i
+                                        class="fa fa-star"></i>TrustPilot</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# TESTIMONIAL SECTION #}
+    <section id="testimonial" class="testimonial_section" style="background-color: #f2f6ff;">
+        <div class="container">
+            <div class="section_title text-center">
+                <div class="section_title_text saas-modern-headline pera-content">
+                    <div class="apldg-headline">
+                        <h1>Client Reviews</h1>
+                    </div>
+                    <p>Find out more about our customers' experiences below</p>
+                </div>
+            </div>
+            <!-- /section-title -->
+            <div class="testimonial_slider">
+                <div id="testimonial_slide" class="carousel slide" data-ride="carousel">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="testimonial_indicator relative-position">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#testimonial_slide" data-slide-to="0" class="active">
+                                        <img src="{% static 'website/img/saas-m/testimonial/tst1.png' %}" alt="">
+                                    </li>
+                                    <li data-target="#testimonial_slide" data-slide-to="1" class="">
+                                        <img src="{% static 'website/img/saas-m/testimonial/tst2.png' %}" alt="">
+                                    </li>
+                                    <li data-target="#testimonial_slide" data-slide-to="2" class="">
+                                        <img src="{% static 'website/img/saas-m/testimonial/tst3.png' %}" alt="">
+                                    </li>
+                                    <li data-target="#testimonial_slide" data-slide-to="3" class="">
+                                        <img src="{% static 'website/img/saas-m/testimonial/tst4.png' %}" alt="">
+                                    </li>
+                                    <li data-target="#testimonial_slide" data-slide-to="4" class="">
+                                        <img src="{% static 'website/img/saas-m/testimonial/tst5.png' %}" alt="">
+                                    </li>
+                                    <li data-target="#testimonial_slide" data-slide-to="5" class="">
+                                        <img src="{% static 'website/img/saas-m/testimonial/tst6.png' %}" alt="">
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="carousel_preview">
+                                <div class="carousel-inner relative-position">
+                                    <div class="carousel-item active">
+                                        <div class="testimonial_content">
+                                            <div class="testimonial_text relative-position pera-content">
+                                                <p>Very quick and easy service given by their team.
+                                                    All explained every step of the way.
+                                                </p>
+                                                <div class="testimonial_rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute_mark relative-position"></div>
+                                            <div class="testimonial_name_designation">
+                                                <div class="testimonial_img float-left">
+                                                    <img src="{% static 'website/img/saas-m/testimonial/tst1.png' %}"
+                                                         alt="">
+                                                </div>
+                                                <div class="testimonial_meta saas-modern-headline pera-content">
+                                                    <h4>Jane</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial_content">
+                                            <div class="testimonial_text relative-position pera-content">
+                                                <p>Excellent service from start to finish kept me informed throughout
+                                                    the process , assisted with both company filing and personal tax
+                                                </p>
+                                                <div class="testimonial_rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute_mark relative-position"></div>
+                                            <div class="testimonial_name_designation">
+                                                <div class="testimonial_img float-left">
+                                                    <img src="{% static 'website/img/saas-m/testimonial/tst2.png' %}"
+                                                         alt="">
+                                                </div>
+                                                <div class="testimonial_meta saas-modern-headline pera-content">
+                                                    <h4>Rameli</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide-item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial_content">
+                                            <div class="testimonial_text relative-position pera-content">
+                                                <p>Aditya is a skilled comunicator with his costumer, professional and
+                                                    patience wich is most important with every realtion.
+                                                </p>
+                                                <div class="testimonial_rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute_mark relative-position"></div>
+                                            <div class="testimonial_name_designation">
+                                                <div class="testimonial_img float-left">
+                                                    <img src="{% static 'website/img/saas-m/testimonial/tst1.png' %}"
+                                                         alt="">
+                                                </div>
+                                                <div class="testimonial_meta saas-modern-headline pera-content">
+                                                    <h4>Andrea</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial_content">
+                                            <div class="testimonial_text relative-position pera-content">
+                                                <p>The account manager, Varsha, was brilliant; she prepared my account
+                                                    in less than 24 hours and notified me the moment it was done.
+                                                </p>
+                                                <div class="testimonial_rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute_mark relative-position"></div>
+                                            <div class="testimonial_name_designation">
+                                                <div class="testimonial_img float-left">
+                                                    <img src="{% static 'website/img/saas-m/testimonial/tst3.png' %}"
+                                                         alt="">
+                                                </div>
+                                                <div class="testimonial_meta saas-modern-headline pera-content">
+                                                    <h4>James Smith</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial_content">
+                                            <div class="testimonial_text relative-position pera-content">
+                                                <p>Fantastic service from start to finish, they are extremely helpful
+                                                    and answered all of my questions thoroughly. Nice easy process, we
+                                                    will definitely be using your services again for next years tax
+                                                    return.
+                                                </p>
+                                                <div class="testimonial_rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute_mark relative-position"></div>
+                                            <div class="testimonial_name_designation">
+                                                <div class="testimonial_img float-left">
+                                                    <img src="{% static 'website/img/saas-m/testimonial/tst4.png' %}"
+                                                         alt="">
+                                                </div>
+                                                <div class="testimonial_meta saas-modern-headline pera-content">
+                                                    <h4>Diana</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial_content">
+                                            <div class="testimonial_text relative-position pera-content">
+                                                <p>A very good, efficient and simple service. In my opinion, one of the
+                                                    few professional firms left on the market. 100% recommended.
+                                                </p>
+                                                <div class="testimonial_rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute_mark relative-position"></div>
+                                            <div class="testimonial_name_designation">
+                                                <div class="testimonial_img float-left">
+                                                    <img src="{% static 'website/img/saas-m/testimonial/tst5.png' %}"
+                                                         alt="">
+                                                </div>
+                                                <div class="testimonial_meta saas-modern-headline pera-content">
+                                                    <h4>Jacob</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                </div>
+                                <a class="carousel-control-prev" href="#testimonial_slide" role="button"
+                                   data-slide="prev"></a>
+                                <a class="carousel-control-next" href="#testimonial_slide" role="button"
+                                   data-slide="next"></a>
+                                <!-- /carosel arrow -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {# STEP BY STEP #}
+    <section id="saas_two_about" class="saas_two_about_section relative-position bg-white">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="apldg-title-area text-center">
+                    <div class="apldg-headline">
+                        <h2>Step By Step Procedure</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/step11.png' %}"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>01</h3><br>
+                                <h4>You may simply click here to talk to one of our team members, and kick start the
+                                    process immediately.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>02</h3>
+                                <h4>You may simply share all necessary company information,</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/step2.svg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/step3.svg' %}"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>03</h3><br>
+                                <h4>Our team processes the same quickly and efficiently,</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>04</h3>
+                                <h4>We finalise the trial balance,</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/step4.svg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/step5.svg' %}"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>05</h3><br>
+                                <h4>Draft accounts and tax return is sent (digitally) for your approval,</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>06</h3>
+                                <h4>We tag the whole thing in iXBRLas perHMRC norms,</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/step6.svg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/step7.svg' %}"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>07</h3><br>
+                                <h4>Finally we submit everything to Companies House andHMRCon your behalf,</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# THE BEST PART #}
+    <section class="apldg-git" id="hero-btn">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 offset-lg-12">
+                    <div class="apldg-git-content">
+                        <div class="apldg-headline">
+                            <h4 class="text-light">
+                                Your dedicated team will be with you step by step during the process
+                            </h4>
+                        </div>
+                        <div class="apldg-git-btn">
+                            <a href="{% url 'website:pricing' %}" class="apldg-primary-btn text-white">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# PATNERS #}
+    <section id="em-trusted-client" style="background-color: #f2f6ff;" class="em-trusted-client-section">
+        <div class="container">
+            <div class="em-trusted-client-content text-center em-headline">
+                <h2> Trusted Partners
+                </h2>
+                <div class="em-trusted-client-logo ul-li">
+                    <ul>
+                        <li><a href="#"><img src="{% static 'website/img/email-market/tc-1.png' %}" alt=""></a></li>
+                        <li><a href="#"><img src="{% static 'website/img/email-market/tc-2.png' %}" alt=""></a></li>
+                        <li><a href="#"><img src="{% static 'website/img/email-market/tc-3.png' %}" alt=""></a></li>
+                        <li><a href="#"><img src="{% static 'website/img/email-market/tc-4.png' %}" alt=""></a></li>
+                        <li><a href="#"><img src="{% static 'website/img/email-market/tc-5.png' %}" alt=""></a></li>
+                        <li><a href="#"><img src="{% static 'website/img/email-market/tc-6.png' %}" alt=""></a></li>
+                        <li><a href="#"><img src="{% static 'website/img/email-market/tc-7.png' %}" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {# ADVICES #}
+    <section id="saas_two_about" class="saas_two_about_section relative-position bg-white">
+        <div class="container">
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/free-advice-for-all-your-accounting-needs.svg' %}"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>Free advice for all your accounting needs</h3><br>
+                                <h5>Tax and accounting Packages tailored to suit your business, we are always straightforward to our services and pricing, we take care of your accounting and let you go with making your business a success</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>One-off accounts and tax filings</h3>
+                                <h5>We bring you a unique service experience through our pay as you go (PAYG) company
+                                    accounts and tax return filing service, where you pay only for what you get. No
+                                    regular or hidden charges.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/one-off-accounts-and-tax-filings.svg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/year-end-accounts-and-tax.svg' %}"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>Year end
+                                    accounts and tax</h3><br>
+                                <h5>Your dedicated account manager is always on top of the deadlines and will keep
+                                    following up with you when your year-end accounts are due and will make sure that
+                                    the filings are done properly to both Companies House and HMRC (the CT600).</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>Self filings for a Company?</h3>
+                                <h5>Many people, especially the ones maintaining proper bookkeeping records, want to
+                                    know
+                                    if they can file the company accounts themselves to Companies House. The answer to
+                                    this is Yes, HOWEVER, you also need to file a company tax return CT600 along with a
+                                    full set of accounts in the iXBRL version, which is practically undoable for a
+                                    novice. Apart from the iXBRL tagging part, you also have to know which expense must
+                                    go under which specificcategory, in order to get everything right.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/self-filings-for-a-company.svg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/same-day-filing-service.svg' %}"
+                                 alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>Same day filing service</h3><br>
+                                <h5>We file your accounts on the same day for a nominal extra cost. Your assigned
+                                    accountant makes use of latest technology to make sure you meet your deadline in
+                                    time. This service is particularly useful when your Companies House filing deadline
+                                    is too close.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about_content_s2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 wow fadeFromLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_text_icon">
+                            <div class="s2-about_text saas2-headline pera-content">
+                                <h3>
+                                    IR 35 Assessment</h3>
+                                <h5>We'll review your business in case it's affected by IR35 and walk you through some
+                                    regulations regarding your limited company's IR35 status.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 wow fadeFromRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="s2-about_img">
+                            <img src="{% static 'website/custom/ir35-assessment.svg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# BOOK #}
+    {#    <section class="apldg-about-section" id="apldg_about">#}
+    {#        <span class="apldg-object-8"><img src="{% static 'website/img/d-agency2/object-8.png' %}" alt=""></span>#}
+    {#        <span class="apldg-object-9"><img src="{% static 'website/img/d-agency2/object-9.png' %}" alt=""></span>#}
+    {#        <span class="apldg-object-10"><img src="{% static 'website/img/d-agency2/object-10.png' %}" alt=""></span>#}
+    {#        <span class="apldg-about-right-img apldg-responsive-vector-img"><img#}
+    {#                src="{% static 'website/img/d-agency2/about-right.png' %}"#}
+    {#                alt=""></span>#}
+    {#        <div class="container">#}
+    {#            <div class="row">#}
+    {#                <div class="col-lg-6">#}
+    {#                    <div class="apldg-about-left">#}
+    {#                        <div class="apldg-title-area">#}
+    {#                            <span class="apldg-subtitle">Call With Our Experts</span>#}
+    {#                            <div class="apldg-headline">#}
+    {#                                <h3>Book a free consultation</h3>#}
+    {#                            </div>#}
+    {#                            <div class="apldg-pera-txt">#}
+    {#                                <p>You are already too busy with the daily grind, what you need is a limited company#}
+    {#                                    accountant who's prompt and reliable and can set you ready for the next step by#}
+    {#                                    making use of clear and business-focused language.#}
+    {#                                </p><br>#}
+    {#                                <p>#}
+    {#                                    We just have a team of experts who love what they do and keen to help you out with#}
+    {#                                    your CT600 online submission and Tax Return Filing by following a few quick steps#}
+    {#                                    and essentially sort out your companies house online register.</p>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                        <div class="apldg-about-btn">#}
+    {#                            <a href="#" class="apldg-primary-btn text-white">Book Now</a>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {##}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </section>#}
+
+
+
+
+    {# LAST PART #}
+    <section class="apldg-git" style="background-color: #f2f6ff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 offset-lg-12">
+                    <div class="apldg-git-content">
+                        <div class="apldg-headline">
+                            <h3 class="text-dark">
+                                Get in touch for an absolutely <b><a data-toggle="modal"
+                                                                     data-target="#modal-request-call" href="#"
+                                                                     class="text-primary">free consultation</a></b>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-manage-filing" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form method="post" action="{% url 'website:filing-add' %}">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Manage Filing</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        {% csrf_token %}
+                        {{ filing_form }}
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fa fa-check-circle"></i> Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-request-call" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <form method="post" action="{% url 'website:call-request-add' %}">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Request a Call Back</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        {% csrf_token %}
+                        {{ call_request_form }}
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fa fa-check-circle"></i> Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-manage-filing-280" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form method="post" action="{% url 'website:filing-add-280' %}">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Manage Filing</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        {% csrf_token %}
+                        {{ filing_form }}
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fa fa-check-circle"></i> Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block css_in %}
+{#    <script src="https://js.stripe.com/v3/"></script>#}
+{#    <script src="{% static 'stripe_pay.js' %}"></script>#}
+{% endblock %}

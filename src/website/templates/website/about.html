@@ -1,0 +1,128 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block sub_title %}
+    About
+{% endblock %}
+
+{% block content %}
+
+    <section id="saasio-breadcurmb" class="saasio-breadcurmb-section">
+        <div class="container">
+            <div class="breadcurmb-title text-center">
+                <h2>About</h2>
+            </div>
+            <div class="breadcurmb-item-list text-center ul-li">
+                <ul class="saasio-page-breadcurmb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="apldg-about-section" id="apldg_about">
+        <span class="apldg-object-8"><img src="{% static 'website/img/d-agency2/object-8.png' %}" alt=""></span>
+        <span class="apldg-object-9"><img src="{% static 'website/img/d-agency2/object-9.png' %}" alt=""></span>
+        <span class="apldg-object-10"><img src="{% static 'website/img/d-agency2/object-10.png' %}" alt=""></span>
+        <span class="apldg-about-right-img apldg-responsive-vector-img"><img
+                src="{% static 'website/img/d-agency2/about-right.png' %}"
+                alt=""></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="apldg-about-left">
+                        <div class="apldg-title-area">
+                            <span class="apldg-subtitle">Call With Our Experts</span>
+                            <div class="apldg-headline">
+                                <h3>Book a free consultation</h3>
+                            </div>
+                            <div class="apldg-pera-txt">
+                                <p>You are already too busy with the daily grind, what you need is a limited company
+                                    accountant who's prompt and reliable and can set you ready for the next step by
+                                    making use of clear and business-focused language.
+                                </p><br>
+                                <p>
+                                    We just have a team of experts who love what they do and keen to help you out with
+                                    your CT600 online submission and Tax Return Filing by following a few quick steps
+                                    and essentially sort out your companies house online register.</p>
+                            </div>
+                        </div>
+                        <div class="apldg-about-btn">
+                            <a href="#" data-toggle="modal" data-target="#modal-request-call"
+                               class="apldg-primary-btn text-white">Book Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sa-contact-inner" style="background-color: #f2f6ff;"
+             class="sa-contact-inner-section inner-page-padding">
+        <div class="container">
+            <div class="saas_two_section_title saas2-headline text-center">
+                <span class="title_tag">Get In Touch</span>
+                <h2>Contact <span>Us
+                    </span></h2>
+            </div>
+            <div class="sa-contact-inner-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="name" placeholder="Your Full Name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="email" placeholder="Your Email Address">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="phone" placeholder="Your Mobile Number">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="subject" placeholder="Your Subject">
+                    </div>
+                    <div class="col-md-12">
+                        <textarea name="message" placeholder="Your Valuable Word"></textarea>
+                    </div>
+                    <div class="sa-contact-inner-btn text-center">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-request-call" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <form method="post" action="{% url 'website:call-request-add' %}">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Request a Call Back</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        {% csrf_token %}
+                        {{ call_request_form }}
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fa fa-check-circle"></i> Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+
+
